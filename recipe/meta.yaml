@@ -5,14 +5,13 @@ package:
   name: {{ name|lower }}
   version: {{ version }}
 
-source:
-  url: https://github.com/microsoft/mssql-scripter/archive/v{{ version }}.tar.gz
-  sha256: 863b820f4ddd0715d01ae7c38047b9396d35fb705222bbaeae5f59e708c0cfa0
-
 build:
   noarch: python
-  number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 1
+  script: "{{ PYTHON }} -m pip install https://files.pythonhosted.org/packages/d0/49/e3a6699c0773063fd8a443fd82b9faa0b8d78f01d75ac5c2327be15f4afe/mssql_scripter-{{ version }}-py2.py3-none-win_amd64.whl -vv" # [win64]
+  script: "{{ PYTHON }} -m pip install https://files.pythonhosted.org/packages/e6/24/190cd7ac0b931ff1010f1fc5672734b8e5041a0c4feeefd0e5ed57a90a77/mssql_scripter-1.0.0a23-py2.py3-none-win32.whl -vv" # [win32]
+  script: "{{ PYTHON }} -m pip install https://files.pythonhosted.org/packages/77/d1/efa8774ccb2a542567f777bf2a6749d4fcd868477edb3deba9a968d5f62c/mssql_scripter-1.0.0a23-py2.py3-none-manylinux1_x86_64.whl -vv" # [linux]
+  script: "{{ PYTHON }} -m pip install https://files.pythonhosted.org/packages/1d/9e/8f6767b4bb6bdc7b2c8bd95924180484b9cec7b80424d866fe9e77ff06fa/mssql_scripter-1.0.0a23-py2.py3-none-macosx_10_11_intel.whl -vv" # [osx]
 
 requirements:
   host:
