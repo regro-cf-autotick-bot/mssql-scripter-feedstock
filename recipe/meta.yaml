@@ -11,6 +11,7 @@ source:
 
 build:
   number: 1
+  merge_build_host: true  # workaround conda-build bug on windows
 
 requirements:
   host:
