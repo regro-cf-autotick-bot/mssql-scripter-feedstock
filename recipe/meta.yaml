@@ -19,6 +19,7 @@ requirements:
   run:
     - python >=3.6
     - future >=0.16.0
+    - enum34
 
 test:
   imports:
