@@ -17,6 +17,7 @@ requirements:
   host:
     - python
     - pip
+    - unzip  # [win]
   run:
     - python
     - future >=0.16.0
