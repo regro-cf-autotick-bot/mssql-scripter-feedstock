@@ -10,7 +10,7 @@ source:
   sha256: 863b820f4ddd0715d01ae7c38047b9396d35fb705222bbaeae5f59e708c0cfa0
 
 build:
-  number: 2
+  number: 3
   merge_build_host: true  # workaround conda-build bug on windows
 
 requirements:
