@@ -10,5 +10,3 @@ python:
 - 3.9.* *_cpython
 target_platform:
 - win-64
-bin_path:
-- win_amd64/Microsoft.SqlTools.ServiceLayer-win-x64-netcoreapp2.1.zip
