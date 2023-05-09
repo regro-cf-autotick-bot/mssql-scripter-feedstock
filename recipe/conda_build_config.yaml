@@ -1,0 +1,4 @@
+bin_path:
+  - win_amd64/Microsoft.SqlTools.ServiceLayer-win-x64-netcoreapp2.1.zip  # [win]
+  - macosx_10_11_intel/Microsoft.SqlTools.ServiceLayer-osx-x64-netcoreapp2.1.tar.gz  # [osx]
+  - manylinux1/Microsoft.SqlTools.ServiceLayer-linux-x64-netcoreapp2.1.tar.gz  # [linux]
