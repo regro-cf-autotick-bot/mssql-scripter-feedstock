@@ -1,3 +1,5 @@
+bin_path:
+- manylinux1/Microsoft.SqlTools.ServiceLayer-linux-x64-netcoreapp2.1.tar.gz
 cdt_name:
 - cos6
 channel_sources:
