@@ -10,16 +10,15 @@ source:
   sha256: 863b820f4ddd0715d01ae7c38047b9396d35fb705222bbaeae5f59e708c0cfa0
 
 build:
-  noarch: python
-  number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 1
+  merge_build_host: true  # workaround conda-build bug on windows
 
 requirements:
   host:
-    - python >=3.6
+    - python
     - pip
   run:
-    - python >=3.6
+    - python
     - future >=0.16.0
 
 test:
