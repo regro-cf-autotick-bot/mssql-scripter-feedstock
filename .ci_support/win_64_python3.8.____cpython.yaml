@@ -1,3 +1,5 @@
+bin_path:
+- win_amd64/Microsoft.SqlTools.ServiceLayer-win-x64-netcoreapp2.1.zip
 channel_sources:
 - conda-forge
 channel_targets:
@@ -10,5 +12,3 @@ python:
 - 3.8.* *_cpython
 target_platform:
 - win-64
-bin_path:
-- win_amd64/Microsoft.SqlTools.ServiceLayer-win-x64-netcoreapp2.1.zip
