@@ -3,5 +3,11 @@ bin_path:
   - macosx_10_11_intel/Microsoft.SqlTools.ServiceLayer-osx-x64-netcoreapp2.1.tar.gz # [osx]
   - manylinux1/Microsoft.SqlTools.ServiceLayer-linux-x64-netcoreapp2.1.tar.gz # [linux]
 python:
-  - 3.6.* *_cpython
-  - 3.7.* *_cpython
+  - 3.6
+  - 3.7
+numpy:
+  - 1.16
+  - 1.16
+python_impl:
+  - cpython
+  - cpython
